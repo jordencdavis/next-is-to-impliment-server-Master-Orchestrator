@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-daze: #871201;
+  --color-dusk: #C61B31;
+  --color-twoam: #DB3A31;
+  --color-spring: #DF9C56;
+  --color-chalkwhite: #F8EBE8;
+  --color-sunshine: #AFD1C2;
+  --color-toasted: #709654;
+  --color-mint: #3B5D37;
+  --color-basil: #1F3E22;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+    background-color: #F8EBE8;
+    color: #1F3E22;
+  }
+  
+  .dark body {
+    background-color: #1F3E22;
+    color: #F8EBE8;
+  }
+  
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Canvas dot grid styling using Toasted & Sunshine */
+.canvas-grid-dots {
+  background-size: 24px 24px;
+  background-image: radial-gradient(circle, rgba(112, 150, 84, 0.25) 1.3px, transparent 1.3px);
+}
+
+.dark .canvas-grid-dots {
+  background-size: 24px 24px;
+  background-image: radial-gradient(circle, rgba(175, 209, 194, 0.22) 1.3px, transparent 1.3px);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(112, 150, 84, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(112, 150, 84, 0.6);
+}

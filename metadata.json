@@ -1,0 +1,8 @@
+{
+  "name": "OLD Master Orchestrator",
+  "description": "Visual Project Organizer and workflow orchestrator featuring a hierarchical organizer tree, interactive node-and-connector canvas with Kanban boards, overhead action bar, and multi-board view manager.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
